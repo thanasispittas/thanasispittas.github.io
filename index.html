@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="keywords" content="Thanasis Pittas, UW-Madison, Machine Learning, Robust Statistics, Ilias Diakonikolas">
+<meta name="description" content="Thanasis' homepage">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanasis Pittas</title>
+
+<script type="text/javascript">
+                
+    function toggle(id) {
+      console.log(id)
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   };
+</script>
+
+<style type="text/css">
+.label:after{
+    content:'Thanasis Pittas';
+}
+.label:hover:after{
+    content:'Θανάσης Πήττας';
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: #9b0000;
+}
+a.abstractlink{
+	/*cursor: pointer;
+	text-decoration: none;*/
+	color: #9b0000;
+}
+
+div.abstract {
+	font-size: 13px;
+}
+
+li{
+  margin: 20px 0;
+}
+
+img.resize {
+	border-radius: 30px;
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 15px;
+}
+body
+{margin:20px auto;
+max-width:800px;
+line-height:1.6;
+font-size:15px;
+font-family: 'Roboto', sans-serif;;
+color:#000;
+padding:10px}
+
+</style>
+<body>
+
+<!-- <h1 class="label">
+</h1> -->
+<h1><span class="label"></span></h1>
+<div>
+
+	<img class="resize" src="image_low_res.jpg">
+
+	<p><br>I am a PhD student in the <a href="https://www.cs.wisc.edu/">computer sciences</a> department at the University of Wisconsin–Madison. I am fortunate to be advised by Prof. <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>. I am working on theoretical machine learning and robust statistics. </p>
+
+	<p>Before coming to Madison, I did my undergraduate studies in Greece, at the <a href="https://www.ece.ntua.gr/en">National Technical University of Athens</a>.</p>
+
+	<p>Feel free to contact me at: <var>pittas[at]wisc.edu</var> or <var>pittas.than[at]gmail.com</var>.</p>
+</div>
+
+</header ><h2 style="clear: both;">Publications</h2>
+<ul style="list-style-type: none">
+
+	<li><b>Statistical Query Lower Bounds for List-Decodable Linear Regression</b>
+	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://ankitp.net/">Ankit Pensia</a>, <a href="http://www.alistair-stewart.com/">Alistair Stewart</a>
+	<br> <i> Advances in Neural Information Processing Systems (NeurIPS), 2021</i> 
+	<br> <b>Spotlight Presentation</b>
+	<br> [<a class= 'abstractlink' onclick= "toggle('paper3abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2106.09689" >Arxiv</a>]
+	 [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/16525">Conference version</a>]<div id = 'paper3abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable linear regression, where an adversary can corrupt a majority of the examples. Specifically, we are given a set $T$ of labeled examples $(x, y) \in \mathbb{R}^d \times \mathbb{R}$ and a parameter $0< \alpha <1/2$ such that an $\alpha$-fraction of the points in $T$ are i.i.d. samples from a linear regression model with Gaussian covariates, and the remaining $(1-\alpha)$-fraction of the points are drawn from an arbitrary noise distribution. The goal is to output a small list of hypothesis vectors such that at least one of them is close to the target regression vector. Our main result is a Statistical Query (SQ) lower bound of $d^{\mathrm{poly}(1/\alpha)}$ for this problem. Our SQ lower bound qualitatively matches the performance of previously developed algorithms, providing evidence that current upper bounds for this task are nearly best possible.</div> 
+	</li>
+
+
+	<li><b>The Optimality of Polynomial Regression for Agnostic Learning under Gaussian Marginals</b>
+	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>,  <a href="https://nikoszarifis.github.io/">Nikos Zarifis</a>
+	<br> <i> Conference on Learning Theory (COLT), 2021</i>
+	<br> [<a class= 'abstractlink' onclick= "toggle('paper2abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2102.04401">Arxiv</a>] [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/16525">Conference version</a>]
+	<div id = 'paper2abs' class= 'abstract' style= ' display:none' > We study the problem of agnostic learning under the Gaussian distribution. We develop a method for finding hard families of examples for a wide class of problems by using LP duality. For Boolean-valued concept classes, we show that the $L^1$-regression algorithm is essentially best possible, and therefore that the computational difficulty of agnostically learning a concept class is closely related to the polynomial degree required to approximate any function from the class in $L^1$-norm. Using this characterization along with additional analytic tools, we obtain optimal SQ lower bounds for agnostically learning linear threshold functions and the first non-trivial SQ lower bounds for polynomial threshold functions and intersections of halfspaces. We also develop an analogous theory for agnostically learning real-valued functions, and as an application prove near-optimal SQ lower bounds for agnostically learning ReLUs and sigmoids.  </div> 
+	</li>
+
+	<li><b>Estimating the Number of Induced Subgraphs from Incomplete Data and Neighborhood Queries</b>
+	<br> with <a href="https://www.softlab.ntua.gr/~fotakis/">Dimitris Fotakis</a>,  <a href="http://www.corelab.ntua.gr/~sskoul/">Stratis Skoulakis</a>
+	<br> <i> AAAI Conference on Artificial Intelligence, 2021</i>
+	<br> [<a class= 'abstractlink' onclick= "toggle('paper1abs')">Abstract</a>] [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/16525">Conference version</a>]
+	<div id = 'paper1abs' class= 'abstract' style= ' display:none' > We consider a natural setting where network parameters are estimated from noisy and incomplete information about the network. More specifically, we investigate how we can efficiently estimate the number of small subgraphs (e.g., edges, triangles, etc.) based on full access to one or two noisy and incomplete samples of a large underlying network and on few queries revealing the neighborhood of carefully selected vertices. After specifying a random generator which removes edges from the underlying graph, we present estimators with strong provable performance guarantees, which exploit information from the noisy network samples and query a constant number of the most important vertices for the estimation. Our experimental evaluation shows that, in practice, a single noisy network sample and a couple of hundreds neighborhood queries suffice for accurately estimating the number of triangles in networks with millions of vertices and edges.  </div> 
+	</li>
+</ul>
+
+<!-- 
+<div class="img-with-text">
+    <img class="resize" src="image.jpg"  />
+    <p>Some text</p>
+</div>
+<p >something else</p> -->
