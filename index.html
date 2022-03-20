@@ -61,22 +61,48 @@ font-family: 'Roboto', sans-serif;;
 color:#000;
 padding:10px}
 
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
 </style>
 <body>
 
 <!-- <h1 class="label">
 </h1> -->
 <h1><span class="label"></span></h1>
-<div>
+
+<div id="content-desktop">
 
 	<img class="resize" src="image_low_res.jpg">
 
-	<p><br>I am a PhD student in the <a href="https://www.cs.wisc.edu/">computer sciences</a> department at the University of Wisconsin–Madison. I am fortunate to be advised by Prof. <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>. I am working on theoretical machine learning and robust statistics. </p>
+	<!-- <p><br>I am a PhD student in the <a href="https://www.cs.wisc.edu/">computer sciences</a> department at the University of Wisconsin–Madison. I am fortunate to be advised by Prof. <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>. I am working on theoretical machine learning and robust statistics. </p>
+
+	<p>Before coming to Madison, I did my undergraduate studies in Greece, at the <a href="https://www.ece.ntua.gr/en">National Technical University of Athens</a>.</p>
+
+	<p>Feel free to contact me at: <var>pittas[at]wisc.edu</var> or <var>pittas.than[at]gmail.com</var>.</p> -->
+
+</div>
+
+
+<div id="content-mobile">
+<center><img  src="image_low_res.jpg" style="border-radius: 30px"></center>
+</div>
+
+
+<p><br>I am a PhD student in the <a href="https://www.cs.wisc.edu/">computer sciences</a> department at the University of Wisconsin–Madison. I am fortunate to be advised by Prof. <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>. I am working on theoretical machine learning and robust statistics. </p>
 
 	<p>Before coming to Madison, I did my undergraduate studies in Greece, at the <a href="https://www.ece.ntua.gr/en">National Technical University of Athens</a>.</p>
 
 	<p>Feel free to contact me at: <var>pittas[at]wisc.edu</var> or <var>pittas.than[at]gmail.com</var>.</p>
-</div>
+
+
 
 </header ><h2 style="clear: both;">Publications</h2>
 <ul style="list-style-type: none">
