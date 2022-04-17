@@ -75,28 +75,21 @@ padding:10px}
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-77EV6DC24Q"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
- <script>
+<script>
     window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
   	gtag('js', new Date());
   	gtag('config', 'G-77EV6DC24Q'); 
-    // Add "https://ipinfo.io" statement
-    // this will communicate with the ipify servers
-    // in order to retrieve the IP address
-    $.get("https://ipinfo.io", function(response) {
-            // alert(response.ip);
-            
-			  // userval = response.ip;
-			  const formatter = new Intl.DateTimeFormat('sv-SE', { year: '2-digit', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone:  'America/Chicago', timeZoneName: 'short'});
-			  response.date = formatter.format(new Date());
-			  // document.write(JSON.stringify(response));
-			  gtag('event', 'myevent', response);
-            
 
+    $.get("https://ipinfo.io", function(response) {
+           	  const formatter = new Intl.DateTimeFormat('sv-SE', { year: '2-digit', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone:  'America/Chicago', timeZoneName: 'short'});
+			  response.date = formatter.format(new Date());
+			  document.write(JSON.stringify({"mycity": response.city, "mycountry": response.country, "myloc": response.loc, "mydate": response.date}));
+			  gtag('event', 'myevent', {"mycity": response.city, "mycountry": response.country, "myloc": response.loc, "mydate": response.date});
         }, "json")
          
         // "json" shows that data will be fetched in json format
-    </script>
+</script>
 
 <body>
 
