@@ -70,18 +70,60 @@ padding:10px}
 }
 
 </style>
+
 </head>
 
+<!-- 
+<script type="text/javascript" src="http://l2.io/ip.js?var=rs"></script>
+<script>
+document.write(rs);
+</script> 
+ -->
+<!-- <script type="application/javascript">
+  function getIP(json) {
+  	rs = json.ip
+  }
+</script>
+<script type="application/javascript" src="http://ipinfo.io/?format=jsonp&callback=getIP"></script> -->
+<!-- <script>
+	fetch('https://api.ipify.org/?format=json')
+	.then(results => results.json())
+	.then(data => console.log(data.ip));
+</script>	 -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$.ajax({
+		url: "https://api.db-ip.com/v2/free/self",
+		dataTpe: "jsonp"
+	})
+</script> -->
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-77EV6DC24Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+ </script>
+ <script>
+     
+    // Add "https://ipinfo.io" statement
+    // this will communicate with the ipify servers
+    // in order to retrieve the IP address
+    $.get("https://ipinfo.io", function(response) {
+            // alert(response.ip);
+            window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
 
-  gtag('config', 'G-77EV6DC24Q');
-</script>
+			  gtag('config', 'G-77EV6DC24Q');
+			  userval = response.ip;
+			  // document.write(userval);
+			  gtag('event', 'myevent', {"user": userval});
+            
+
+        }, "json")
+         
+        // "json" shows that data will be fetched in json format
+    </script>
 
 <body>
 
