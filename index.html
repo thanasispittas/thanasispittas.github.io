@@ -71,12 +71,12 @@ padding:10px}
 
 </style>
 </head>
-<!-- 
+
 <script type="text/javascript" src="http://l2.io/ip.js?var=rs"></script>
-<script>
-document.write("Debugging here!!!!!!!!!!!",rs);
-</script>
- -->
+<!-- <script>
+document.write(rs);
+</script> -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-77EV6DC24Q"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -84,7 +84,8 @@ document.write("Debugging here!!!!!!!!!!!",rs);
   gtag('js', new Date());
 
   gtag('config', 'G-77EV6DC24Q');
-  userval = "5.2.4";
+  userval = rs;
+  document.write(userval);
   gtag('event', 'myevent', {"user": userval});
 </script>
 
