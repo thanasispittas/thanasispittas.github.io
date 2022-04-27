@@ -6,7 +6,6 @@
 <meta name="description" content="I am a PhD student in the CS department at UW-Madison, advised by Ilias Diakonikolas. I am working on theoretical machine learning and robust statistics.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thanasis Pittas</title>
-<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 
 <script type="text/javascript">
                 
@@ -46,9 +45,6 @@ div.abstract {
 li{
   margin: 20px 0;
 }
-
-
-
 
 body
 {margin:20px auto;
@@ -90,7 +86,6 @@ padding:10px}
 
 <body>
 
-
 <h1><span class="label"></span></h1>
 
 <div id="content-desktop">
@@ -112,8 +107,14 @@ padding:10px}
 </header ><h2 style="clear: both;">Publications</h2>
 <ul style="list-style-type: none">
 
+	<li><b>Streaming Algorithms for High-Dimensional Robust Statistics</b>
+	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
+	<br> <i> Manuscript, 2021</i> 
+	<br> [<a class= 'abstractlink' onclick= "toggle('paper4abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2204.12399" >arXiv</a>]<div id = 'paper4abs' class= 'abstract' style= ' display:none'  >We study high-dimensional robust statistics tasks in the streaming model. A recent line of work obtained computationally efficient algorithms for a range of high-dimensional robust estimation tasks. Unfortunately, all previous algorithms require storing the entire dataset, incurring memory at least quadratic in the dimension. In this work, we develop the first efficient streaming algorithms for high-dimensional robust statistics with near-optimal memory requirements (up to logarithmic factors). Our main result is for the task of high-dimensional robust mean estimation in (a strengthening of) Huber's contamination model. We give an efficient single-pass streaming algorithm for this task with near-optimal error guarantees and space complexity nearly-linear in the dimension. As a corollary, we obtain streaming algorithms with near-optimal space complexity for several more complex tasks, including robust covariance estimation, robust regression, and more generally robust stochastic optimization.</div> 
+	</li>
+
 	<li><b>Statistical Query Lower Bounds for List-Decodable Linear Regression</b>
-	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://ankitp.net/">Ankit Pensia</a>, <a href="http://www.alistair-stewart.com/">Alistair Stewart</a>
+	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://ankitp.net/">Ankit Pensia</a>, and <a href="http://www.alistair-stewart.com/">Alistair Stewart</a>
 	<br> <i> Advances in Neural Information Processing Systems (NeurIPS), 2021</i> 
 	<br> <b>Spotlight Presentation</b>
 	<br> [<a class= 'abstractlink' onclick= "toggle('paper3abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2106.09689" >arXiv</a>]
@@ -122,31 +123,27 @@ padding:10px}
 
 
 	<li><b>The Optimality of Polynomial Regression for Agnostic Learning under Gaussian Marginals</b>
-	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>,  <a href="https://nikoszarifis.github.io/">Nikos Zarifis</a>
+	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://nikoszarifis.github.io/">Nikos Zarifis</a>
 	<br> <i> Conference on Learning Theory (COLT), 2021</i>
 	<br> [<a class= 'abstractlink' onclick= "toggle('paper2abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2102.04401">arXiv</a>] [<a href="https://proceedings.mlr.press/v134/diakonikolas21c.html">Conference version</a>]
 	<div id = 'paper2abs' class= 'abstract' style= ' display:none' > We study the problem of agnostic learning under the Gaussian distribution. We develop a method for finding hard families of examples for a wide class of problems by using LP duality. For Boolean-valued concept classes, we show that the $L^1$-regression algorithm is essentially best possible, and therefore that the computational difficulty of agnostically learning a concept class is closely related to the polynomial degree required to approximate any function from the class in $L^1$-norm. Using this characterization along with additional analytic tools, we obtain optimal SQ lower bounds for agnostically learning linear threshold functions and the first non-trivial SQ lower bounds for polynomial threshold functions and intersections of halfspaces. We also develop an analogous theory for agnostically learning real-valued functions, and as an application prove near-optimal SQ lower bounds for agnostically learning ReLUs and sigmoids.  </div> 
 	</li>
 
 	<li><b>Estimating the Number of Induced Subgraphs from Incomplete Data and Neighborhood Queries</b>
-	<br> with <a href="https://www.softlab.ntua.gr/~fotakis/">Dimitris Fotakis</a>,  <a href="http://www.corelab.ntua.gr/~sskoul/">Stratis Skoulakis</a>
+	<br> with <a href="https://www.softlab.ntua.gr/~fotakis/">Dimitris Fotakis</a> and <a href="http://www.corelab.ntua.gr/~sskoul/">Stratis Skoulakis</a>
 	<br> <i> AAAI Conference on Artificial Intelligence, 2021</i>
 	<br> [<a class= 'abstractlink' onclick= "toggle('paper1abs')">Abstract</a>] [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/16525">Conference version</a>]
 	<div id = 'paper1abs' class= 'abstract' style= ' display:none' > We consider a natural setting where network parameters are estimated from noisy and incomplete information about the network. More specifically, we investigate how we can efficiently estimate the number of small subgraphs (e.g., edges, triangles, etc.) based on full access to one or two noisy and incomplete samples of a large underlying network and on few queries revealing the neighborhood of carefully selected vertices. After specifying a random generator which removes edges from the underlying graph, we present estimators with strong provable performance guarantees, which exploit information from the noisy network samples and query a constant number of the most important vertices for the estimation. Our experimental evaluation shows that, in practice, a single noisy network sample and a couple of hundreds neighborhood queries suffice for accurately estimating the number of triangles in networks with millions of vertices and edges.  </div> 
 	</li>
 </ul>
 
-
-<!--
-
+<!-- 
 </header ><h2 style="clear: both;">Teaching and Service</h2>
 <ul style="list-style-type: none">
 	<li style="margin: 0px">Teaching Assistant for Introduction to Artificial Inteligence, UW-Madison, Spring 2022</li>
 	<li style="margin: 0px">Teaching Assistant for Discrete Mathematics, NTUA, Spring 2019</li>
 	<li style="margin: 0px">Teaching Assistant for Algorithms and Complexity, NTUA, Fall 2019</li>
 	<li style="margin: 0px">Lab Assistant for Introduction to Programming, NTUA, Fall 2019</li>
-	<li style="margin: 10px 0"><b>Reviewer:</b> ICML 2022, NeurIPS 2022</li>
+	<li style="margin: 10px 0"><b>Reviewer:</b> ICML 2022</li>
 </ul>
-
-
--->
+ -->
