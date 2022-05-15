@@ -5,6 +5,22 @@
 <meta name="google-site-verification" content="2Zixfk_FGYd5AYNhRWmK1jtwRxRlJAuyKM85sQGXEhQ" />
 <meta name="description" content="I am a PhD student in the CS department at UW-Madison, advised by Ilias Diakonikolas. I am working on theoretical machine learning and robust statistics.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
 <title>Thanasis Pittas</title>
 
 <script type="text/javascript">
@@ -20,6 +36,35 @@
 </script>
 
 <style type="text/css">
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Roboto, sans-serif;
+  line-height: 1.2;
+  /* color: #330; */
+  font-weight: 100;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+
+body{
+margin:20px auto;
+max-width:800px;
+line-height:1.6;
+font-size:15px;
+/*font-family: 'Noto Sans', sans-serif;*/
+font-family: 'Roboto', sans-serif;
+color:#000;
+padding:10px
+}
+
+var {
+  font-family: "Roboto Mono";
+  font-size:15px;
+  font-style: normal;
+
+}
+
 .label:after{
     content:'Thanasis Pittas';
 }
@@ -46,15 +91,6 @@ li{
   margin: 20px 0;
 }
 
-body
-{margin:20px auto;
-max-width:800px;
-line-height:1.6;
-font-size:15px;
-font-family: 'Roboto', sans-serif;;
-color:#000;
-padding:10px}
-
 #content-desktop {display: block;}
 #content-mobile {display: none;}
 
@@ -66,8 +102,6 @@ padding:10px}
 }
 
 </style>
-
-</head>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-77EV6DC24Q"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
@@ -83,6 +117,7 @@ padding:10px}
 			  gtag('event', 'myevent', {"mycity": response.city, "mycountry": response.country, "myregion": response.region, "myloc": response.loc, "mydate": response.date, "myadr": response.ip});
         }, "json")
 </script>
+</head>
 
 <body>
 
@@ -104,12 +139,18 @@ padding:10px}
 
 	<p>Feel free to contact me at: <var>pittas[at]wisc.edu</var> or <var>pittas.than[at]gmail.com</var>.</p>
 
-</header ><h2 style="clear: both;">Publications</h2>
+<h2 style="clear: both;">Publications</h2>
 <ul style="list-style-type: none">
+
+	<li><b>Robust Sparse Mean Estimation via Sum of Squares</b>
+	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://sushrutk.github.io/">Sushrut Karmalkar</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
+	<br> <i> Conference on Learning Theory (COLT), 2022 (To appear)</i> 
+	<br> [<a class= 'abstractlink' onclick= "toggle('paper5abs')">Abstract</a>]<div id = 'paper5abs' class= 'abstract' style= ' display:none'  >We study the problem of high-dimensional sparse mean estimation in the presence of an $\epsilon$-fraction of adversarial outliers. Prior work obtained sample and computationally efficient algorithms for this task for identity-covariance subgaussian distributions. In this work, we develop the first efficient algorithms for robust sparse mean estimation without a priori knowledge of the covariance. For distributions on $\mathbb{R}^d$ with `certifiably bounded' $t$-th moments and sufficiently light tails, our algorithm achieves error of $O(\epsilon^{1-1/t})$ with sample complexity $m = (k\log(d))^{O(t)}/\epsilon^{2-2/t}$. For the special case of the Gaussian distribution, our algorithm achieves near-optimal error of $\tilde O(\epsilon)$ with sample complexity $m = O(k^4 \mathrm{polylog}(d))/\epsilon^2$. Our algorithms follow the Sum-of-Squares based proofs to algorithms approach. We complement our upper bounds with Statistical Query and low-degree polynomial testing lower bounds, providing evidence that the sample-time-error tradeoffs achieved by our algorithms are qualitatively best possible.</div> 
+	</li>
 
 	<li><b>Streaming Algorithms for High-Dimensional Robust Statistics</b>
 	<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
-	<br> <i> Manuscript, 2022</i> 
+	<br> <i> International Conference on Machine Learning (ICML), 2022 (To appear)</i> 
 	<br> [<a class= 'abstractlink' onclick= "toggle('paper4abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2204.12399" >arXiv</a>]<div id = 'paper4abs' class= 'abstract' style= ' display:none'  >We study high-dimensional robust statistics tasks in the streaming model. A recent line of work obtained computationally efficient algorithms for a range of high-dimensional robust estimation tasks. Unfortunately, all previous algorithms require storing the entire dataset, incurring memory at least quadratic in the dimension. In this work, we develop the first efficient streaming algorithms for high-dimensional robust statistics with near-optimal memory requirements (up to logarithmic factors). Our main result is for the task of high-dimensional robust mean estimation in (a strengthening of) Huber's contamination model. We give an efficient single-pass streaming algorithm for this task with near-optimal error guarantees and space complexity nearly-linear in the dimension. As a corollary, we obtain streaming algorithms with near-optimal space complexity for several more complex tasks, including robust covariance estimation, robust regression, and more generally robust stochastic optimization.</div> 
 	</li>
 
@@ -118,7 +159,7 @@ padding:10px}
 	<br> <i> Advances in Neural Information Processing Systems (NeurIPS), 2021</i> 
 	<br> <b>Spotlight Presentation</b>
 	<br> [<a class= 'abstractlink' onclick= "toggle('paper3abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2106.09689" >arXiv</a>]
-	 [<a href="https://proceedings.neurips.cc/paper/2021/hash/19b1b73d63d4c9ea79f8ca57e9d67095-Abstract.html">Conference version</a>]<div id = 'paper3abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable linear regression, where an adversary can corrupt a majority of the examples. Specifically, we are given a set $T$ of labeled examples $(x, y) \in \mathbb{R}^d \times \mathbb{R}$ and a parameter $0< \alpha <1/2$ such that an $\alpha$-fraction of the points in $T$ are i.i.d. samples from a linear regression model with Gaussian covariates, and the remaining $(1-\alpha)$-fraction of the points are drawn from an arbitrary noise distribution. The goal is to output a small list of hypothesis vectors such that at least one of them is close to the target regression vector. Our main result is a Statistical Query (SQ) lower bound of $d^{\mathrm{poly}(1/\alpha)}$ for this problem. Our SQ lower bound qualitatively matches the performance of previously developed algorithms, providing evidence that current upper bounds for this task are nearly best possible.</div> 
+	 [<a href="https://proceedings.neurips.cc/paper/2021/hash/19b1b73d63d4c9ea79f8ca57e9d67095-Abstract.html">Conference version</a>]<div id = 'paper3abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable linear regression, where an adversary can corrupt a majority of the examples. Specifically, we are given a set $T$ of labeled examples $(x, y) \in \mathbb{R}^d \times \mathbb{R}$ and a parameter $0< \alpha &lt; 1/2$ such that an $\alpha$-fraction of the points in $T$ are i.i.d. samples from a linear regression model with Gaussian covariates, and the remaining $(1-\alpha)$-fraction of the points are drawn from an arbitrary noise distribution. The goal is to output a small list of hypothesis vectors such that at least one of them is close to the target regression vector. Our main result is a Statistical Query (SQ) lower bound of $d^{\mathrm{poly}(1/\alpha)}$ for this problem. Our SQ lower bound qualitatively matches the performance of previously developed algorithms, providing evidence that current upper bounds for this task are nearly best possible.</div> 
 	</li>
 
 
@@ -137,7 +178,7 @@ padding:10px}
 	</li>
 </ul>
 
-<!-- 
+
 </header ><h2 style="clear: both;">Teaching and Service</h2>
 <ul style="list-style-type: none">
 	<li style="margin: 0px">Teaching Assistant for Introduction to Artificial Inteligence, UW-Madison, Spring 2022</li>
@@ -146,4 +187,4 @@ padding:10px}
 	<li style="margin: 0px">Lab Assistant for Introduction to Programming, NTUA, Fall 2019</li>
 	<li style="margin: 10px 0"><b>Reviewer:</b> ICML 2022</li>
 </ul>
- -->
+
