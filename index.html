@@ -161,7 +161,7 @@
 <div class="desktop-version">
 
 
-	<div  class="container multiple"  style="padding-top:5px; padding-bottom:5px;">
+	<div  class="container multiple"  style="padding-top:5px; padding-bottom:5px; display: flex; align-items: center;">
 		<!-- <div id="content-desktop">
 			<img src="image_comp.jpg" style="border-radius: 28px; float: right; padding: 10px 15px; margin:20px auto;" image-rendering="pixelated" width="320px">
 		</div>
@@ -178,7 +178,7 @@
 		</div>
 
 		<div class="image">
-			<img src="image_comp.jpg"  style="border-radius: 13px;" image-rendering="pixelated" width="320px" >
+			<img src="image_comp.jpg"  style="border-radius: 7px;" image-rendering="pixelated" width="320px"  >
 		</div>
 	</div>
 </div>
@@ -190,7 +190,7 @@
 
 
 	<div>
-	<center><img  src="image_comp.jpg" style="border-radius: 27px;  padding: 15px;" image-rendering="pixelated" width="320px"></center>
+	<center><img  src="image_comp.jpg" style="border-radius: 25px;  padding: 15px;" image-rendering="pixelated" width="320px"></center>
 	</div>
 
 	<div class="container">
@@ -206,6 +206,21 @@
 	<h2 style="clear: both;">Publications</h2>
 
 	<ul style="list-style-type: none">
+
+		<li><b>A Spectral Algorithm for List-Decodable Covariance Estimation in Relative Frobenius Norm</b>
+			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://jasperchlee.github.io">Jasper C. H. Lee</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
+			<br> <i> Manuscript, 2023</i> 
+			<br> [<a onclick= "toggle('paper8abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2305.00966" >arXiv</a>]<div id = 'paper8abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable Gaussian covariance estimation. Given a multiset $T$ of $n$ points in $\mathbb{R}^d$ such that an unknown $\alpha &lt; 1/2$ fraction of points in $T$ are i.i.d. samples from an unknown Gaussian $\mathcal{N}(\mu,\Sigma)$, the goal is to output a list of $O(1/\alpha)$ hypotheses at least one of which is close to $\Sigma$ in relative Frobenius norm. Our main result is a $\mathrm{poly}(d,1/\alpha)$ sample and time algorithm for this task that guarantees relative Frobenius norm error of $\mathrm{poly}(1/\alpha)$. Importantly, our algorithm relies purely on spectral techniques. As a corollary, we obtain an efficient spectral algorithm for robust partial clustering of Gaussian mixture models (GMMs) -- a key ingredient in the recent work of [BDJ+22] on robustly learning arbitrary GMMs. Combined with the other components of [BDJ+22], our new method yields the first Sum-of-Squares-free algorithm for robustly learning GMMs. At the technical level, we develop a novel multi-filtering method for list-decodable covariance estimation that may be useful in other settings.
+		</div> 
+		</li>
+
+		<li><b>Nearly-Linear Time and Streaming Algorithms for Outlier-Robust PCA </b>
+			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
+			<br> <i> International Conference on Machine Learning (ICML), 2023</i>  
+			<br> [<a onclick= "toggle('paper7abs')">Abstract</a>] <div id = 'paper7abs' class= 'abstract' style= ' display:none'  >We study principal component analysis (PCA), where given a dataset in $\mathbb{R}^d$ from a distribution, the task is to find a unit vector $v$ that approximately maximizes the variance of the distribution after being projected along $v$. Despite being a classical task, standard estimators fail drastically if the data contains even a small fraction  of outliers, motivating the problem of robust PCA. Recent work has developed computationally-efficient algorithms for robust PCA that either take super-linear time or have sub-optimal error guarantees. Our main contribution is to develop a nearly linear time algorithm for robust PCA with near-optimal error guarantees. We also develop a single-pass streaming algorithm for robust PCA with memory usage  nearly-linear in the dimension.
+		</div> 
+		</li>
+
 
 		<li><b>List-Decodable Sparse Mean Estimation via Difference-of-Pairs Filtering</b>
 		<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://sushrutk.github.io/">Sushrut Karmalkar</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
@@ -234,7 +249,7 @@
 		<br> <i> Advances in Neural Information Processing Systems (NeurIPS), 2021</i> 
 		<br> <b>Spotlight Presentation</b>
 		<br> [<a onclick= "toggle('paper3abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2106.09689" >arXiv</a>]
-		[<a href="https://proceedings.neurips.cc/paper/2021/hash/19b1b73d63d4c9ea79f8ca57e9d67095-Abstract.html">Conference version</a>]<div id = 'paper3abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable linear regression, where an adversary can corrupt a majority of the examples. Specifically, we are given a set $T$ of labeled examples $(x, y) \in \mathbb{R}^d \times \mathbb{R}$ and a parameter $0< \alpha &lt; 1/2$ such that an $\alpha$-fraction of the points in $T$ are i.i.d. samples from a linear regression model with Gaussian covariates, and the remaining $(1-\alpha)$-fraction of the points are drawn from an arbitrary noise distribution. The goal is to output a small list of hypothesis vectors such that at least one of them is close to the target regression vector. Our main result is a Statistical Query (SQ) lower bound of $d^{\mathrm{poly}(1/\alpha)}$ for this problem. Our SQ lower bound qualitatively matches the performance of previously developed algorithms, providing evidence that current upper bounds for this task are nearly best possible.</div> 
+		[<a href="https://proceedings.neurips.cc/paper/2021/hash/19b1b73d63d4c9ea79f8ca57e9d67095-Abstract.html">Conference version</a>]<div id = 'paper3abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable linear regression, where an adversary can corrupt a majority of the examples. Specifically, we are given a set $T$ of labeled examples $(x, y) \in \mathbb{R}^d \times \mathbb{R}$ and a parameter $0&lt;\alpha &lt; 1/2$ such that an $\alpha$-fraction of the points in $T$ are i.i.d. samples from a linear regression model with Gaussian covariates, and the remaining $(1-\alpha)$-fraction of the points are drawn from an arbitrary noise distribution. The goal is to output a small list of hypothesis vectors such that at least one of them is close to the target regression vector. Our main result is a Statistical Query (SQ) lower bound of $d^{\mathrm{poly}(1/\alpha)}$ for this problem. Our SQ lower bound qualitatively matches the performance of previously developed algorithms, providing evidence that current upper bounds for this task are nearly best possible.</div> 
 		</li>
 
 
@@ -263,7 +278,7 @@
 		<li style="margin: 0px">Teaching Assistant for Discrete Mathematics, NTUA, 2019</li>
 		<li style="margin: 0px">Teaching Assistant for Algorithms and Complexity, NTUA, 2019</li>
 		<li style="margin: 0px">Lab Assistant for Introduction to Programming, NTUA, 2019</li>
-		<li style="margin: 10px 0"><b>Reviewer:</b> NeurIPS 2022, ICML 2022</li>
+		<li style="margin: 10px 0"><b>Reviewer:</b> ICLR 2023, NeurIPS 2022, ICML 2022</li>
 	</ul>
 </div>
 
