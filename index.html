@@ -207,6 +207,22 @@
 
 	<ul style="list-style-type: none">
 
+		<li><b>Near-Optimal Algorithms for Gaussians with Huber Contamination: Mean Estimation and Linear Regression</b>
+			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
+			<br> <i> Advances in Neural Information Processing Systems (NeurIPS), 2023</i> 
+			<br> [<a onclick= "toggle('paper10abs')">Abstract</a>] <div id = 'paper10abs' class= 'abstract' style= ' display:none'  >We study the fundamental problems of Gaussian mean estimation and linear regression with Gaussian covariates in the presence of Huber contamination. Our main contribution is the design of the first sample near-optimal and almost linear-time algorithms with optimal error guarantees for both these problems. Specifically, for Gaussian robust mean estimation on $\mathbb{R}^d$ with contamination parameter $\epsilon \in (0, \epsilon_0)$ for a small absolute constant $\epsilon_0$, we give an algorithm with sample complexity $n = \tilde{O}(d/\epsilon^2)$ and almost linear runtime that approximates the target mean within $\ell_2$-error $O(\epsilon)$. This improves on prior work that achieved this error guarantee with polynomially suboptimal sample and time complexity. For robust linear regression, we give the first algorithm with sample complexity $n = \tilde{O}(d/\epsilon^2)$ and almost linear runtime that approximates the target regressor within $\ell_2$-error $O(\epsilon)$. This is the first polynomial sample and time algorithm achieving the optimal error guarantee, answering an open question in the literature. At the technical level, we develop a methodology that yields almost-linear time algorithms for multi-directional filtering that may be of broader interest. 
+		</div> 
+		</li>
+
+		<li><b>A Spectral Algorithm for List-Decodable Covariance Estimation in Relative Frobenius Norm</b>
+			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://jasperchlee.github.io">Jasper C. H. Lee</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
+			<br> <i> Advances in Neural Information Processing Systems (NeurIPS), 2023</i> 
+			<br> <b>Spotlight Presentation</b>
+			<br> [<a onclick= "toggle('paper8abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2305.00966" >arXiv</a>]<div id = 'paper8abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable Gaussian covariance estimation. Given a multiset $T$ of $n$ points in $\mathbb{R}^d$ such that an unknown $\alpha &lt; 1/2$ fraction of points in $T$ are i.i.d. samples from an unknown Gaussian $\mathcal{N}(\mu,\Sigma)$, the goal is to output a list of $O(1/\alpha)$ hypotheses at least one of which is close to $\Sigma$ in relative Frobenius norm. Our main result is a $\mathrm{poly}(d,1/\alpha)$ sample and time algorithm for this task that guarantees relative Frobenius norm error of $\mathrm{poly}(1/\alpha)$. Importantly, our algorithm relies purely on spectral techniques. As a corollary, we obtain an efficient spectral algorithm for robust partial clustering of Gaussian mixture models (GMMs) -- a key ingredient in the recent work of [BDJ+22] on robustly learning arbitrary GMMs. Combined with the other components of [BDJ+22], our new method yields the first Sum-of-Squares-free algorithm for robustly learning GMMs. At the technical level, we develop a novel multi-filtering method for list-decodable covariance estimation that may be useful in other settings.
+		</div> 
+		</li>
+
+
 		<li><b>SQ Lower Bounds for Learning Bounded Covariance GMMs</b>
 			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://nikoszarifis.github.io/">Nikos Zarifis</a>
 			<br> <i> Conference on Learning Theory (COLT), 2023</i> 
@@ -215,13 +231,7 @@
 		</div> 
 		</li>
 
-		<li><b>A Spectral Algorithm for List-Decodable Covariance Estimation in Relative Frobenius Norm</b>
-			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://jasperchlee.github.io">Jasper C. H. Lee</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
-			<br> <i> Manuscript, 2023</i> 
-			<br> [<a onclick= "toggle('paper8abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2305.00966" >arXiv</a>]<div id = 'paper8abs' class= 'abstract' style= ' display:none'  >We study the problem of list-decodable Gaussian covariance estimation. Given a multiset $T$ of $n$ points in $\mathbb{R}^d$ such that an unknown $\alpha &lt; 1/2$ fraction of points in $T$ are i.i.d. samples from an unknown Gaussian $\mathcal{N}(\mu,\Sigma)$, the goal is to output a list of $O(1/\alpha)$ hypotheses at least one of which is close to $\Sigma$ in relative Frobenius norm. Our main result is a $\mathrm{poly}(d,1/\alpha)$ sample and time algorithm for this task that guarantees relative Frobenius norm error of $\mathrm{poly}(1/\alpha)$. Importantly, our algorithm relies purely on spectral techniques. As a corollary, we obtain an efficient spectral algorithm for robust partial clustering of Gaussian mixture models (GMMs) -- a key ingredient in the recent work of [BDJ+22] on robustly learning arbitrary GMMs. Combined with the other components of [BDJ+22], our new method yields the first Sum-of-Squares-free algorithm for robustly learning GMMs. At the technical level, we develop a novel multi-filtering method for list-decodable covariance estimation that may be useful in other settings.
-		</div> 
-		</li>
-
+		
 		<li><b>Nearly-Linear Time and Streaming Algorithms for Outlier-Robust PCA </b>
 			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
 			<br> <i> International Conference on Machine Learning (ICML), 2023</i>  
