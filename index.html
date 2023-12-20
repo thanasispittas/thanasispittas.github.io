@@ -207,6 +207,13 @@
 
 	<ul style="list-style-type: none">
 
+		<li><b>Clustering Mixtures of Bounded Covariance Distributions Under Optimal Separation</b>
+			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://ankitp.net/">Jasper C.H. Lee</a>
+			<br> <i> Manuscript, 2023</i> 
+			<br> [<a onclick= "toggle('paper11abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2312.11769" >arXiv</a>]<div id = 'paper11abs' class= 'abstract' style= ' display:none'  >We study the clustering problem for mixtures of bounded covariance distributions, under a fine-grained separation assumption. Specifically, given samples from a $k$-component mixture distribution $D = \sum_{i =1}^k w_i P_i$, where each $w_i \ge \alpha$ for some known parameter $\alpha$, and each $P_i$ has unknown covariance $\Sigma_i \preceq \sigma^2_i \cdot I_d$ for some unknown $\sigma_i$, the goal is to cluster the samples assuming a pairwise mean separation in the order of $(\sigma_i+\sigma_j)/\sqrt{\alpha}$ between every pair of components $P_i$ and $P_j$. Our contributions are as follows: For the special case of nearly uniform mixtures, we give the first poly-time algorithm for this clustering task. Prior work either required separation scaling with the maximum cluster standard deviation (i.e. $\max_i \sigma_i$) [DKK+22b] or required both additional structural assumptions and mean separation scaling as a large degree polynomial in $1/\alpha$ [BKK22]. For general-weight mixtures, we point out that accurate clustering is information-theoretically impossible under our fine-grained mean separation assumptions. We introduce the notion of a clustering refinement -- a list of not-too-small subsets satisfying a similar separation, and which can be merged into a clustering approximating the ground truth -- and show that it is possible to efficiently compute an accurate clustering refinement of the samples. Furthermore, under a variant of the "no large sub-cluster'' condition from in prior work [BKK22], we show that our algorithm outputs an accurate clustering, not just a refinement, even for general-weight mixtures. As a corollary, we obtain efficient clustering algorithms for mixtures of well-conditioned high-dimensional log-concave distributions. Moreover, our algorithm is robust to $\Omega(\alpha)$-fraction of adversarial outliers.
+		</div> 
+		</li>
+
 		<li><b>Near-Optimal Algorithms for Gaussians with Huber Contamination: Mean Estimation and Linear Regression</b>
 			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
 			<br> <i> Advances in Neural Information Processing Systems (NeurIPS), 2023</i> 
@@ -295,7 +302,7 @@
 		<li style="margin: 0px">Teaching Assistant for Discrete Mathematics, NTUA, 2019</li>
 		<li style="margin: 0px">Teaching Assistant for Algorithms and Complexity, NTUA, 2019</li>
 		<li style="margin: 0px">Lab Assistant for Introduction to Programming, NTUA, 2019</li>
-		<li style="margin: 10px 0"><b>Reviewer:</b> ICLR 2023, NeurIPS 2022, ICML 2022</li>
+		<li style="margin: 10px 0"><b>Reviewer:</b> NeurIPS 2023, ICLR 2023, NeurIPS 2022, ICML 2022</li>
 	</ul>
 </div>
 
