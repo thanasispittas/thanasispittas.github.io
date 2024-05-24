@@ -210,14 +210,14 @@
 
 		<li><b>Robust Sparse Estimation for Gaussians with Optimal Error under Huber Contamination</b>
 			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, <a href="https://sushrutk.github.io/">Sushrut Karmalkar</a>, and <a href="https://ankitp.net/">Ankit Pensia</a>
-			<br> <i> Manuscript, 2024</i> 
+			<br> <i> International Conference on Machine Learning (ICML), 2024</i> 
 			<br> [<a onclick= "toggle('paper13abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2403.10416" >arXiv</a>]<div id = 'paper13abs' class= 'abstract' style= ' display:none'  >We study Gaussian sparse estimation tasks in Huber's contamination model with a focus on mean estimation, PCA, and linear regression. For each of these tasks, we give the first sample and computationally efficient robust estimators with optimal error guarantees, within constant factors. All prior efficient algorithms for these tasks incur quantitatively suboptimal error. Concretely, for Gaussian robust $k$-sparse mean estimation on $\mathbb{R}^d$ with corruption rate $\epsilon>0$, our algorithm has sample complexity $(k^2/\epsilon^2)\mathrm{polylog}(d/\epsilon)$, runs in sample polynomial time, and approximates the target mean within $\ell_2$-error $O(\epsilon)$. Previous efficient algorithms inherently incur error $\Omega(\epsilon \sqrt{\log(1/\epsilon)})$. At the technical level, we develop a novel multidimensional filtering method in the sparse regime that may find other applications.
 		</div> 
 		</li>
 
 		<li><b>Statistical Query Lower Bounds for Learning Truncated Gaussians</b>
 			<br> with <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,  <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and <a href="https://nikoszarifis.github.io/">Nikos Zarifis</a>
-			<br> <i> Manuscript, 2024</i> 
+			<br> <i> Conference on Learning Theory (COLT), 2024</i> 
 			<br> [<a onclick= "toggle('paper12abs')">Abstract</a>] [<a href="https://arxiv.org/abs/2403.02300" >arXiv</a>]<div id = 'paper12abs' class= 'abstract' style= ' display:none'  >We study the problem of estimating the mean of an identity covariance Gaussian in the truncated setting, in the regime when the truncation set comes from a low-complexity family $\mathcal{C}$ of sets. Specifically, for a fixed but unknown truncation set $S \subseteq \mathbb{R}^d$, we are given access to samples from the distribution $\mathcal{N}(\boldsymbol \mu,\boldsymbol I)$ truncated to the set $S$. The goal is to estimate $\boldsymbol \mu$ within accuracy $\epsilon>0$ in $\ell_2$-norm. Our main result is a Statistical Query (SQ) lower bound suggesting a super-polynomial information-computation gap for this task. In more detail, we show that the complexity of any SQ algorithm for this problem is $d^{\mathrm{poly}(1/\epsilon)}$, even when the class $\mathcal{C}$ is simple so that $\mathrm{poly}(d/\epsilon)$ samples information-theoretically suffice. Concretely, our SQ lower bound applies when $\mathcal{C}$ is a union of a bounded number of rectangles whose VC dimension and Gaussian surface are small. As a corollary of our construction, it also follows that the complexity of the previously known algorithm for this taskis qualitatively best possible. 
 		</div> 
 		</li>
